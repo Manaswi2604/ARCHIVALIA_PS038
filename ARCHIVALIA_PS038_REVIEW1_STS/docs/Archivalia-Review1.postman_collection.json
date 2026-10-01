@@ -1,0 +1,8 @@
+{
+  "info": {"name":"Archivalia PS038 Review 1","schema":"https://schema.getpostman.com/json/collection/v2.1.0/collection.json"},
+  "item":[
+    {"name":"Login","request":{"method":"POST","header":[{"key":"Content-Type","value":"application/json"}],"body":{"mode":"raw","raw":"{\"email\":\"user@archivalia.com\",\"password\":\"user123\"}"},"url":{"raw":"http://localhost:8080/api/auth/login","protocol":"http","host":["localhost"],"port":"8080","path":["api","auth","login"]}}},
+    {"name":"Books","request":{"method":"GET","url":{"raw":"http://localhost:8080/api/books","protocol":"http","host":["localhost"],"port":"8080","path":["api","books"]}}},
+    {"name":"My Loans","request":{"method":"GET","header":[{"key":"Authorization","value":"Bearer {{token}}"}],"url":{"raw":"http://localhost:8080/api/borrow/my","protocol":"http","host":["localhost"],"port":"8080","path":["api","borrow","my"]}}}
+  ]
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Archivalia Login</title><link rel="stylesheet" href="styles.css"></head>
+<body class="login-body">
+<div class="login-card">
+<div class="logo big">A</div><span class="eyebrow">ARCHIVALIA PS038</span><h1>Welcome back.</h1>
+<p>Sign in to your academic resource workspace.</p>
+<form id="loginForm">
+<label>Email<input id="email" type="email" value="user@archivalia.com" required></label>
+<label>Password<input id="password" type="password" value="user123" required></label>
+<button class="primary" type="submit">Sign in securely →</button>
+</form>
+<div class="hint">Demo USER: user@archivalia.com / user123<br>Demo ADMIN: admin@archivalia.com / admin123</div>
+<div id="msg"></div>
+</div><script>
+const API="http://localhost:8080";
+document.getElementById("loginForm").onsubmit=async e=>{
+ e.preventDefault(); const msg=document.getElementById("msg");
+ try{const r=await fetch(API+"/api/auth/login",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({email:email.value,password:password.value})});
+ const d=await r.json(); if(!r.ok) throw new Error(d.message||"Login failed");
+ localStorage.setItem("archivalia_token",d.token);localStorage.setItem("archivalia_email",d.email);localStorage.setItem("archivalia_role",d.role);location.href="index.html";
+ }catch(x){msg.textContent=x.message;msg.className="error";}
+};
+</script></body></html>

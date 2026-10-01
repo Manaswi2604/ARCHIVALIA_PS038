@@ -1,0 +1,8 @@
+name: Archivalia
+values:
+  - key: baseUrl
+    value: ''
+  - key: userToken
+    value: ''
+  - key: adminToken
+    value: ''

@@ -1,0 +1,22 @@
+server:
+  port: 8084
+spring:
+  application:
+    name: AUTH-SERVICE
+  datasource:
+    url: jdbc:postgresql://localhost:5432/archivalia
+    username: postgres
+    password: Archivalia@123
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info

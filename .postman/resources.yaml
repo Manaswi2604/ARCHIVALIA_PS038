@@ -1,0 +1,7 @@
+# Use this workspace to collaborate
+workspace:
+  id: 883e7ece-1cb2-46ea-8f3c-f4f0daa2a946
+
+localResources:
+  collections:
+    - ../ARCHIVALIA_PS038_REVIEW1_STS/docs/Archivalia-Review1.postman_collection.json

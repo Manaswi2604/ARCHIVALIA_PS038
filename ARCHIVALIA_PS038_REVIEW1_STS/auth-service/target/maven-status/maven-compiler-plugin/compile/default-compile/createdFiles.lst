@@ -1,0 +1,10 @@
+com\archivalia\auth\controller\AuthController$LoginRequest.class
+com\archivalia\auth\config\DataInitializer.class
+com\archivalia\auth\model\AppUser$AppUserBuilder.class
+com\archivalia\auth\model\ERole.class
+com\archivalia\auth\AuthServiceApplication.class
+com\archivalia\auth\repo\UserRepository.class
+com\archivalia\auth\config\SecurityConfig.class
+com\archivalia\auth\controller\AuthController.class
+com\archivalia\auth\model\AppUser.class
+com\archivalia\auth\security\JwtService.class

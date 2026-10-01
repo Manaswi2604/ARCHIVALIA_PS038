@@ -1,0 +1,7 @@
+C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\src\main\java\com\archivalia\borrow\BorrowServiceApplication.java
+C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\src\main\java\com\archivalia\borrow\config\RestClientConfig.java
+C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\src\main\java\com\archivalia\borrow\config\SecurityConfig.java
+C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\src\main\java\com\archivalia\borrow\controller\BorrowController.java
+C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\src\main\java\com\archivalia\borrow\model\Borrow.java
+C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\src\main\java\com\archivalia\borrow\repo\BorrowRepository.java
+C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\src\main\java\com\archivalia\borrow\security\JwtFilter.java

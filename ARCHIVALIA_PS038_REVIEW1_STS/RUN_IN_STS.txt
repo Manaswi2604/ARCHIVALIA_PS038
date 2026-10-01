@@ -1,0 +1,30 @@
+ARCHIVALIA PS038 – Review 1
+===========================
+
+1. Install Java 21, Maven and PostgreSQL.
+2. Create PostgreSQL DB: archivalia
+3. In STS import each Maven project:
+   eureka-server
+   api-gateway
+   auth-service
+   book-service
+   borrow-service
+   fine-service
+
+4. Start:
+   Eureka -> Auth -> Book -> Fine -> Borrow -> Gateway
+
+5. Open:
+   http://localhost:8761
+   http://localhost:8080
+
+6. Frontend:
+   Open frontend/login.html.
+   Login:
+   user@archivalia.com / user123
+
+7. If PostgreSQL password is not "postgres":
+   edit username/password in application.yml in all four database services.
+
+NOTE:
+This is a Review-1 academic implementation. It demonstrates the requested SOA/microservice concepts and is not intended as a production security configuration.

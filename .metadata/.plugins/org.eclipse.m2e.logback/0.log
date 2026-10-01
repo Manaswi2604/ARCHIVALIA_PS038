@@ -1,0 +1,761 @@
+2026-09-16 14:26:03,485 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
+2026-09-16 14:26:40,979 [Worker-0: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:api-gateway:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\api-gateway\pom.xml.
+2026-09-16 14:26:41,105 [Worker-0: Importing Maven projects] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-gateway/4.3.0/spring-cloud-starter-gateway-4.3.0.pom
+2026-09-16 14:26:41,751 [Worker-0: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:auth-service:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\auth-service\pom.xml.
+2026-09-16 14:26:41,993 [Worker-0: Importing Maven projects] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/projectlombok/lombok/1.18.40/lombok-1.18.40.pom
+2026-09-16 14:26:42,258 [Worker-0: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:book-service:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\book-service\pom.xml.
+2026-09-16 14:26:42,385 [Worker-0: Importing Maven projects] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/projectlombok/lombok/1.18.40/lombok-1.18.40.jar
+2026-09-16 14:26:42,427 [Worker-0: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:borrow-service:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\pom.xml.
+2026-09-16 14:26:42,577 [Worker-0: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:eureka-server:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\eureka-server\pom.xml.
+2026-09-16 14:26:42,884 [Worker-0: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:fine-service:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\fine-service\pom.xml.
+2026-09-16 14:26:44,467 [Worker-0: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /auth-service/src/main/java
+2026-09-16 14:26:44,470 [Worker-0: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /auth-service/src/main/resources
+2026-09-16 14:26:44,475 [Worker-0: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /auth-service/src/main/resources
+2026-09-16 14:26:44,476 [Worker-0: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /auth-service/src/test/java
+2026-09-16 14:26:44,477 [Worker-0: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /auth-service/src/test/resources
+2026-09-16 14:26:44,809 [Worker-9: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/projectlombok/lombok/1.18.40/lombok-1.18.40-sources.jar
+2026-09-16 14:26:45,236 [Worker-9: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download sources for org.projectlombok:lombok:1.18.40
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.projectlombok:lombok:jar:sources:1.18.40
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:540)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:300)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2026-09-16 14:26:45,250 [Worker-9: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/projectlombok/lombok/1.18.40/lombok-1.18.40-javadoc.jar
+2026-09-16 14:26:45,253 [Worker-9: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download javadoc for org.projectlombok:lombok:1.18.40
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.projectlombok:lombok:jar:javadoc:1.18.40
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:540)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:300)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2026-09-16 14:26:45,265 [Worker-9: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-gateway/4.3.0/spring-cloud-starter-gateway-4.3.0-sources.jar
+2026-09-16 14:26:45,276 [Worker-9: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download sources for org.springframework.cloud:spring-cloud-starter-gateway:4.3.0
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.cloud:spring-cloud-starter-gateway:jar:sources:4.3.0
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:540)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:300)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2026-09-16 14:26:46,631 [Worker-0: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /book-service/src/main/java
+2026-09-16 14:26:46,632 [Worker-0: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /book-service/src/main/resources
+2026-09-16 14:26:46,638 [Worker-0: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /book-service/src/main/resources
+2026-09-16 14:26:46,639 [Worker-0: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /book-service/src/test/java
+2026-09-16 14:26:46,641 [Worker-0: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /book-service/src/test/resources
+2026-09-16 14:26:47,262 [Worker-0: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /fine-service/src/main/java
+2026-09-16 14:26:47,264 [Worker-0: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /fine-service/src/main/resources
+2026-09-16 14:26:47,273 [Worker-0: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /fine-service/src/main/resources
+2026-09-16 14:26:47,274 [Worker-0: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /fine-service/src/test/java
+2026-09-16 14:26:47,276 [Worker-0: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /fine-service/src/test/resources
+2026-09-16 14:26:47,827 [Worker-0: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /api-gateway/src/main/java
+2026-09-16 14:26:47,829 [Worker-0: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /api-gateway/src/main/resources
+2026-09-16 14:26:47,839 [Worker-0: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /api-gateway/src/main/resources
+2026-09-16 14:26:47,840 [Worker-0: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /api-gateway/src/test/java
+2026-09-16 14:26:47,842 [Worker-0: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /api-gateway/src/test/resources
+2026-09-16 14:26:48,351 [Worker-0: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /borrow-service/src/main/java
+2026-09-16 14:26:48,352 [Worker-0: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /borrow-service/src/main/resources
+2026-09-16 14:26:48,358 [Worker-0: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /borrow-service/src/main/resources
+2026-09-16 14:26:48,359 [Worker-0: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /borrow-service/src/test/java
+2026-09-16 14:26:48,360 [Worker-0: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /borrow-service/src/test/resources
+2026-09-16 14:26:48,853 [Worker-0: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /eureka-server/src/main/java
+2026-09-16 14:26:48,855 [Worker-0: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /eureka-server/src/main/resources
+2026-09-16 14:26:48,862 [Worker-0: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /eureka-server/src/main/resources
+2026-09-16 14:26:48,863 [Worker-0: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /eureka-server/src/test/java
+2026-09-16 14:26:48,864 [Worker-0: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /eureka-server/src/test/resources
+2026-09-16 14:26:49,077 [Worker-2: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-gateway/4.3.0/spring-cloud-starter-gateway-4.3.0-javadoc.jar
+2026-09-16 14:26:49,084 [Worker-2: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download javadoc for org.springframework.cloud:spring-cloud-starter-gateway:4.3.0
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.cloud:spring-cloud-starter-gateway:jar:javadoc:4.3.0
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:540)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:300)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2026-09-16 14:26:49,512 [Worker-0: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 6 project(s) in 12 sec
+2026-09-16 14:26:49,739 [Worker-11: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2026-09-16 14:26:51,992 [Worker-11: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:api-gateway:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\api-gateway\pom.xml.
+2026-09-16 14:26:52,746 [Worker-11: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:book-service:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\book-service\pom.xml.
+2026-09-16 14:26:53,266 [Worker-11: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:borrow-service:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\pom.xml.
+2026-09-16 14:26:53,441 [Worker-11: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:eureka-server:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\eureka-server\pom.xml.
+2026-09-16 14:26:53,686 [Worker-11: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:fine-service:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\fine-service\pom.xml.
+2026-09-16 14:26:56,674 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /api-gateway/src/main/java
+2026-09-16 14:26:56,677 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /api-gateway/src/main/resources
+2026-09-16 14:26:56,679 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /api-gateway/src/main/resources
+2026-09-16 14:26:56,680 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /api-gateway/src/test/java
+2026-09-16 14:26:56,682 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /api-gateway/src/test/resources
+2026-09-16 14:26:57,105 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /book-service/src/main/java
+2026-09-16 14:26:57,107 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /book-service/src/main/resources
+2026-09-16 14:26:57,109 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /book-service/src/main/resources
+2026-09-16 14:26:57,110 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /book-service/src/test/java
+2026-09-16 14:26:57,112 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /book-service/src/test/resources
+2026-09-16 14:26:57,610 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /borrow-service/src/main/java
+2026-09-16 14:26:57,611 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /borrow-service/src/main/resources
+2026-09-16 14:26:57,613 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /borrow-service/src/main/resources
+2026-09-16 14:26:57,614 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /borrow-service/src/test/java
+2026-09-16 14:26:57,615 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /borrow-service/src/test/resources
+2026-09-16 14:26:58,230 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /eureka-server/src/main/java
+2026-09-16 14:26:58,231 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /eureka-server/src/main/resources
+2026-09-16 14:26:58,232 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /eureka-server/src/main/resources
+2026-09-16 14:26:58,233 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /eureka-server/src/test/java
+2026-09-16 14:26:58,234 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /eureka-server/src/test/resources
+2026-09-16 14:26:58,710 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /fine-service/src/main/java
+2026-09-16 14:26:58,711 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /fine-service/src/main/resources
+2026-09-16 14:26:58,712 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /fine-service/src/main/resources
+2026-09-16 14:26:58,713 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /fine-service/src/test/java
+2026-09-16 14:26:58,714 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /fine-service/src/test/resources
+2026-09-16 14:26:59,664 [Worker-11: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 5 poms: local refresh takes 0.00 sec, refresh facades takes 6.00 sec, update config takes 2.00 sec 
+2026-09-16 14:26:59,894 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-16 14:26:59,976 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-16 14:26:59,991 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\api-gateway\src\test\resources
+2026-09-16 14:27:00,974 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-16 14:27:00,979 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-16 14:27:00,984 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\auth-service\src\test\resources
+2026-09-16 14:27:01,132 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-16 14:27:01,137 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-16 14:27:01,142 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\book-service\src\test\resources
+2026-09-16 14:27:01,262 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-16 14:27:01,266 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-16 14:27:01,271 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\src\test\resources
+2026-09-16 14:27:02,306 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-16 14:27:02,306 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-16 14:27:02,316 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\eureka-server\src\test\resources
+2026-09-16 14:27:02,456 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-16 14:27:02,466 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-16 14:27:02,476 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\fine-service\src\test\resources
+2026-09-16 14:29:24,619 [Worker-4: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2026-09-16 14:29:25,910 [Worker-4: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:api-gateway:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\api-gateway\pom.xml.
+2026-09-16 14:29:37,964 [Worker-4: Updating Maven Project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-gateway/4.3.0/spring-cloud-starter-gateway-4.3.0.pom
+2026-09-16 14:29:38,337 [Worker-4: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:auth-service:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\auth-service\pom.xml.
+2026-09-16 14:29:38,439 [Worker-4: Updating Maven Project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/projectlombok/lombok/1.18.40/lombok-1.18.40.pom
+2026-09-16 14:29:38,591 [Worker-4: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:book-service:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\book-service\pom.xml.
+2026-09-16 14:29:38,717 [Worker-4: Updating Maven Project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/projectlombok/lombok/1.18.40/lombok-1.18.40.jar
+2026-09-16 14:29:38,741 [Worker-4: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:borrow-service:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\pom.xml.
+2026-09-16 14:29:38,866 [Worker-4: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:eureka-server:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\eureka-server\pom.xml.
+2026-09-16 14:29:39,170 [Worker-4: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:fine-service:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\fine-service\pom.xml.
+2026-09-16 14:29:40,300 [Worker-4: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /api-gateway/src/main/java
+2026-09-16 14:29:40,300 [Worker-4: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /api-gateway/src/main/resources
+2026-09-16 14:29:40,301 [Worker-4: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /api-gateway/src/main/resources
+2026-09-16 14:29:40,301 [Worker-4: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /api-gateway/src/test/java
+2026-09-16 14:29:40,301 [Worker-4: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /api-gateway/src/test/resources
+2026-09-16 14:29:40,415 [Worker-4: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /auth-service/src/main/java
+2026-09-16 14:29:40,416 [Worker-4: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /auth-service/src/main/resources
+2026-09-16 14:29:40,417 [Worker-4: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /auth-service/src/main/resources
+2026-09-16 14:29:40,417 [Worker-4: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /auth-service/src/test/java
+2026-09-16 14:29:40,418 [Worker-4: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /auth-service/src/test/resources
+2026-09-16 14:29:40,594 [Worker-4: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /book-service/src/main/java
+2026-09-16 14:29:40,595 [Worker-4: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /book-service/src/main/resources
+2026-09-16 14:29:40,595 [Worker-4: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /book-service/src/main/resources
+2026-09-16 14:29:40,595 [Worker-4: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /book-service/src/test/java
+2026-09-16 14:29:40,596 [Worker-4: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /book-service/src/test/resources
+2026-09-16 14:29:40,786 [Worker-4: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /borrow-service/src/main/java
+2026-09-16 14:29:40,787 [Worker-4: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /borrow-service/src/main/resources
+2026-09-16 14:29:40,787 [Worker-4: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /borrow-service/src/main/resources
+2026-09-16 14:29:40,787 [Worker-4: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /borrow-service/src/test/java
+2026-09-16 14:29:40,788 [Worker-4: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /borrow-service/src/test/resources
+2026-09-16 14:29:40,994 [Worker-4: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /eureka-server/src/main/java
+2026-09-16 14:29:40,995 [Worker-4: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /eureka-server/src/main/resources
+2026-09-16 14:29:40,995 [Worker-4: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /eureka-server/src/main/resources
+2026-09-16 14:29:40,995 [Worker-4: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /eureka-server/src/test/java
+2026-09-16 14:29:40,996 [Worker-4: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /eureka-server/src/test/resources
+2026-09-16 14:29:41,187 [Worker-4: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /fine-service/src/main/java
+2026-09-16 14:29:41,188 [Worker-4: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /fine-service/src/main/resources
+2026-09-16 14:29:41,188 [Worker-4: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /fine-service/src/main/resources
+2026-09-16 14:29:41,188 [Worker-4: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /fine-service/src/test/java
+2026-09-16 14:29:41,189 [Worker-4: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /fine-service/src/test/resources
+2026-09-16 14:29:41,579 [Worker-4: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 6 poms: local refresh takes 0.00 sec, refresh facades takes 15.00 sec, update config takes 1.00 sec 
+2026-09-16 14:29:41,726 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-16 14:29:41,740 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-16 14:29:41,744 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\api-gateway\src\test\resources
+2026-09-16 14:29:41,989 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-16 14:29:41,990 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-16 14:29:41,992 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\auth-service\src\test\resources
+2026-09-16 14:29:42,019 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-16 14:29:42,020 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-16 14:29:42,022 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\book-service\src\test\resources
+2026-09-16 14:29:42,053 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-16 14:29:42,055 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-16 14:29:42,057 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\src\test\resources
+2026-09-16 14:29:42,115 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-16 14:29:42,116 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-16 14:29:42,119 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\eureka-server\src\test\resources
+2026-09-16 14:29:42,147 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-16 14:29:42,149 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-16 14:29:42,151 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\fine-service\src\test\resources
+2026-09-16 14:45:05,899 [Worker-17: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:auth-service:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\auth-service\pom.xml.
+2026-09-16 14:45:07,014 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-16 14:45:07,015 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-16 14:45:07,018 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\auth-service\src\test\resources
+2026-09-16 14:45:07,883 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-16 14:45:07,887 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-16 14:45:07,899 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\auth-service\src\test\resources
+2026-09-16 14:45:08,252 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-16 14:45:08,256 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-16 14:45:08,263 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\book-service\src\test\resources
+2026-09-16 14:45:08,603 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-16 14:45:08,609 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-16 14:45:08,614 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\src\test\resources
+2026-09-16 14:45:08,915 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-16 14:45:08,918 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-16 14:45:08,922 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\fine-service\src\test\resources
+2026-09-16 14:45:33,690 [Worker-17: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2026-09-16 14:45:34,946 [Worker-17: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:auth-service:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\auth-service\pom.xml.
+2026-09-16 14:45:35,391 [Worker-17: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:borrow-service:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\pom.xml.
+2026-09-16 14:45:35,494 [Worker-17: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:book-service:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\book-service\pom.xml.
+2026-09-16 14:45:35,608 [Worker-17: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:eureka-server:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\eureka-server\pom.xml.
+2026-09-16 14:45:35,792 [Worker-17: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:fine-service:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\fine-service\pom.xml.
+2026-09-16 14:45:35,900 [Worker-17: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:api-gateway:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\api-gateway\pom.xml.
+2026-09-16 14:45:37,205 [Worker-17: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /auth-service/src/main/java
+2026-09-16 14:45:37,206 [Worker-17: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /auth-service/src/main/resources
+2026-09-16 14:45:37,206 [Worker-17: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /auth-service/src/main/resources
+2026-09-16 14:45:37,206 [Worker-17: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /auth-service/src/test/java
+2026-09-16 14:45:37,207 [Worker-17: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /auth-service/src/test/resources
+2026-09-16 14:45:37,767 [Worker-17: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 3.00 sec, update config takes 0.00 sec 
+2026-09-16 14:45:37,952 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-16 14:45:37,978 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-16 14:45:37,985 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\api-gateway\src\test\resources
+2026-09-16 14:45:39,031 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-16 14:45:39,033 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-16 14:45:39,037 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\auth-service\src\test\resources
+2026-09-16 14:45:40,247 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-16 14:45:40,248 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-16 14:45:40,250 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\api-gateway\src\test\resources
+2026-09-16 14:49:59,211 [Worker-14: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2026-09-16 14:50:00,545 [Worker-14: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:auth-service:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\auth-service\pom.xml.
+2026-09-16 14:50:01,098 [Worker-14: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:borrow-service:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\pom.xml.
+2026-09-16 14:50:01,179 [Worker-14: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:book-service:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\book-service\pom.xml.
+2026-09-16 14:50:01,240 [Worker-14: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:eureka-server:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\eureka-server\pom.xml.
+2026-09-16 14:50:01,407 [Worker-14: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:fine-service:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\fine-service\pom.xml.
+2026-09-16 14:50:01,464 [Worker-14: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:api-gateway:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\api-gateway\pom.xml.
+2026-09-16 14:50:02,290 [Worker-14: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /auth-service/src/main/java
+2026-09-16 14:50:02,291 [Worker-14: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /auth-service/src/main/resources
+2026-09-16 14:50:02,292 [Worker-14: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /auth-service/src/main/resources
+2026-09-16 14:50:02,292 [Worker-14: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /auth-service/src/test/java
+2026-09-16 14:50:02,293 [Worker-14: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /auth-service/src/test/resources
+2026-09-16 14:50:02,802 [Worker-14: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 3.00 sec, update config takes 0.00 sec 
+2026-09-16 14:50:03,194 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-16 14:50:03,227 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-16 14:50:03,232 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\auth-service\src\test\resources
+2026-09-16 14:52:14,495 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-16 14:52:14,505 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-16 14:52:14,508 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\auth-service\src\test\resources
+2026-09-16 14:53:51,356 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-16 14:53:51,365 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-16 14:53:51,368 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\auth-service\src\test\resources
+2026-09-16 14:54:01,151 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-16 14:54:01,157 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-16 14:54:01,159 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\auth-service\src\test\resources
+2026-09-16 14:55:23,478 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-16 14:55:23,545 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-16 14:55:23,551 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\auth-service\src\test\resources
+2026-09-16 14:56:24,593 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-16 14:56:24,598 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-16 14:56:24,601 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\auth-service\src\test\resources
+2026-09-16 14:58:38,831 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-16 14:58:38,837 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-16 14:58:38,839 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\auth-service\src\test\resources
+2026-09-16 14:59:29,776 [Worker-24: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2026-09-16 14:59:30,682 [Worker-24: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:auth-service:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\auth-service\pom.xml.
+2026-09-16 14:59:31,060 [Worker-24: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:borrow-service:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\pom.xml.
+2026-09-16 14:59:31,127 [Worker-24: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:book-service:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\book-service\pom.xml.
+2026-09-16 14:59:31,186 [Worker-24: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:eureka-server:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\eureka-server\pom.xml.
+2026-09-16 14:59:31,297 [Worker-24: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:fine-service:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\fine-service\pom.xml.
+2026-09-16 14:59:31,357 [Worker-24: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:api-gateway:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\api-gateway\pom.xml.
+2026-09-16 14:59:32,295 [Worker-24: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /auth-service/src/main/java
+2026-09-16 14:59:32,295 [Worker-24: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /auth-service/src/main/resources
+2026-09-16 14:59:32,296 [Worker-24: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /auth-service/src/main/resources
+2026-09-16 14:59:32,296 [Worker-24: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /auth-service/src/test/java
+2026-09-16 14:59:32,296 [Worker-24: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /auth-service/src/test/resources
+2026-09-16 14:59:32,689 [Worker-24: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 2.00 sec, update config takes 0.00 sec 
+2026-09-16 14:59:33,067 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-16 14:59:33,090 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-16 14:59:33,095 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\auth-service\src\test\resources
+2026-09-16 15:01:47,733 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-16 15:01:47,738 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-16 15:01:47,740 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\auth-service\src\test\resources
+2026-09-16 15:02:54,558 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-16 15:02:54,570 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-16 15:02:54,574 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\auth-service\src\test\resources
+2026-09-16 15:03:41,543 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-16 15:03:41,555 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-16 15:03:41,558 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\auth-service\src\test\resources
+2026-09-16 15:04:31,088 [Worker-17: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2026-09-16 15:04:31,916 [Worker-17: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:auth-service:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\auth-service\pom.xml.
+2026-09-16 15:04:32,270 [Worker-17: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:borrow-service:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\pom.xml.
+2026-09-16 15:04:32,330 [Worker-17: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:book-service:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\book-service\pom.xml.
+2026-09-16 15:04:32,387 [Worker-17: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:eureka-server:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\eureka-server\pom.xml.
+2026-09-16 15:04:32,487 [Worker-17: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:fine-service:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\fine-service\pom.xml.
+2026-09-16 15:04:32,542 [Worker-17: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:api-gateway:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\api-gateway\pom.xml.
+2026-09-16 15:04:33,359 [Worker-17: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /auth-service/src/main/java
+2026-09-16 15:04:33,359 [Worker-17: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /auth-service/src/main/resources
+2026-09-16 15:04:33,360 [Worker-17: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /auth-service/src/main/resources
+2026-09-16 15:04:33,360 [Worker-17: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /auth-service/src/test/java
+2026-09-16 15:04:33,360 [Worker-17: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /auth-service/src/test/resources
+2026-09-16 15:04:33,623 [Worker-17: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 2.00 sec, update config takes 0.00 sec 
+2026-09-16 15:04:33,928 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-16 15:04:33,937 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-16 15:04:33,940 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\auth-service\src\test\resources
+2026-09-16 15:05:47,175 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-16 15:05:47,184 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-16 15:05:47,189 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\auth-service\src\test\resources
+2026-09-16 15:08:05,625 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-16 15:08:05,629 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-16 15:08:05,631 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\auth-service\src\test\resources
+2026-09-16 15:08:44,024 [Worker-27: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2026-09-16 15:08:44,856 [Worker-27: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:auth-service:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\auth-service\pom.xml.
+2026-09-16 15:08:45,149 [Worker-27: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:borrow-service:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\pom.xml.
+2026-09-16 15:08:45,230 [Worker-27: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:book-service:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\book-service\pom.xml.
+2026-09-16 15:08:45,310 [Worker-27: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:eureka-server:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\eureka-server\pom.xml.
+2026-09-16 15:08:45,437 [Worker-27: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:fine-service:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\fine-service\pom.xml.
+2026-09-16 15:08:45,492 [Worker-27: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:api-gateway:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\api-gateway\pom.xml.
+2026-09-16 15:08:46,451 [Worker-27: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /auth-service/src/main/java
+2026-09-16 15:08:46,453 [Worker-27: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /auth-service/src/main/resources
+2026-09-16 15:08:46,453 [Worker-27: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /auth-service/src/main/resources
+2026-09-16 15:08:46,454 [Worker-27: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /auth-service/src/test/java
+2026-09-16 15:08:46,455 [Worker-27: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /auth-service/src/test/resources
+2026-09-16 15:08:46,819 [Worker-27: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 2.00 sec, update config takes 0.00 sec 
+2026-09-16 15:08:47,205 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-16 15:08:47,222 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-16 15:08:47,225 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\auth-service\src\test\resources
+2026-09-16 15:09:26,717 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-16 15:09:26,725 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-16 15:09:26,728 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\auth-service\src\test\resources
+2026-09-16 15:10:25,994 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-16 15:10:25,999 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-16 15:10:26,001 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\auth-service\src\test\resources
+2026-09-16 15:14:32,094 [Worker-23: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-configuration-processor/3.5.6/spring-boot-configuration-processor-3.5.6.pom
+2026-09-16 15:14:32,120 [Worker-23: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-configuration-processor/3.5.6/spring-boot-configuration-processor-3.5.6.pom
+2026-09-16 15:14:32,604 [Worker-23: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-configuration-processor/3.5.6/spring-boot-configuration-processor-3.5.6.jar
+2026-09-16 15:14:32,901 [Worker-23: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-configuration-processor/3.5.6/spring-boot-configuration-processor-3.5.6.jar
+2026-09-16 15:14:32,941 [Worker-23: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:borrow-service:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\book-service\pom.xml.
+2026-09-16 15:14:33,533 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-16 15:14:33,533 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-16 15:14:33,535 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\book-service\src\test\resources
+2026-09-16 15:14:34,046 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-16 15:14:34,050 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-16 15:14:34,054 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\book-service\src\test\resources
+2026-09-16 15:14:44,881 [Worker-31: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-configuration-processor/3.5.6/spring-boot-configuration-processor-3.5.6-sources.jar
+2026-09-16 15:14:45,183 [Worker-31: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-configuration-processor/3.5.6/spring-boot-configuration-processor-3.5.6-sources.jar
+2026-09-16 15:14:45,188 [Worker-31: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-configuration-processor:3.5.6
+2026-09-16 15:18:12,182 [Worker-29: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:borrow-service:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\book-service\pom.xml.
+2026-09-16 15:18:12,758 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-16 15:18:12,759 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-16 15:18:12,761 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\book-service\src\test\resources
+2026-09-16 15:21:03,648 [Worker-32: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:borrow-service:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\book-service\pom.xml.
+2026-09-16 15:21:04,407 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-16 15:21:04,408 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-16 15:21:04,409 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\book-service\src\test\resources
+2026-09-17 08:19:02,168 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
+2026-09-17 08:19:21,991 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 08:19:22,203 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 08:19:22,219 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\api-gateway\src\test\resources
+2026-09-17 08:19:31,851 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 08:19:31,858 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 08:19:31,867 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\auth-service\src\test\resources
+2026-09-17 08:19:35,841 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 08:19:35,856 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 08:19:35,878 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\book-service\src\test\resources
+2026-09-17 08:19:39,545 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 08:19:39,545 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 08:19:39,556 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\src\test\resources
+2026-09-17 08:19:43,429 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 08:19:43,444 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 08:19:43,460 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\eureka-server\src\test\resources
+2026-09-17 08:19:46,946 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 08:19:46,952 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 08:19:46,960 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\fine-service\src\test\resources
+2026-09-17 08:19:52,109 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 08:19:52,115 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 08:19:52,123 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\src\test\resources
+2026-09-17 08:19:52,457 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 08:19:52,457 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 08:19:52,473 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\eureka-server\src\test\resources
+2026-09-17 14:18:10,962 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2026-09-17 14:29:33,403 [Worker-10: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2026-09-17 14:29:34,229 [Worker-10: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:borrow-service:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\book-service\pom.xml.
+2026-09-17 14:29:35,564 [Worker-10: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /book-service/src/main/java
+2026-09-17 14:29:35,567 [Worker-10: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /book-service/src/main/resources
+2026-09-17 14:29:35,568 [Worker-10: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /book-service/src/main/resources
+2026-09-17 14:29:35,568 [Worker-10: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /book-service/src/test/java
+2026-09-17 14:29:35,569 [Worker-10: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /book-service/src/test/resources
+2026-09-17 14:29:36,135 [Worker-10: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 1.00 sec, update config takes 0.00 sec 
+2026-09-17 14:29:37,437 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 14:29:37,471 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:29:37,475 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\book-service\src\test\resources
+2026-09-17 14:29:58,269 [Worker-13: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2026-09-17 14:29:58,980 [Worker-13: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:borrow-service:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\pom.xml.
+2026-09-17 14:29:59,416 [Worker-13: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:eureka-server:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\eureka-server\pom.xml.
+2026-09-17 14:29:59,647 [Worker-13: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:fine-service:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\fine-service\pom.xml.
+2026-09-17 14:30:00,241 [Worker-13: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /borrow-service/src/main/java
+2026-09-17 14:30:00,241 [Worker-13: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /borrow-service/src/main/resources
+2026-09-17 14:30:00,242 [Worker-13: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /borrow-service/src/main/resources
+2026-09-17 14:30:00,242 [Worker-13: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /borrow-service/src/test/java
+2026-09-17 14:30:00,243 [Worker-13: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /borrow-service/src/test/resources
+2026-09-17 14:30:00,438 [Worker-13: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /eureka-server/src/main/java
+2026-09-17 14:30:00,440 [Worker-13: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /eureka-server/src/main/resources
+2026-09-17 14:30:00,440 [Worker-13: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /eureka-server/src/main/resources
+2026-09-17 14:30:00,441 [Worker-13: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /eureka-server/src/test/java
+2026-09-17 14:30:00,442 [Worker-13: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /eureka-server/src/test/resources
+2026-09-17 14:30:00,633 [Worker-13: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /fine-service/src/main/java
+2026-09-17 14:30:00,634 [Worker-13: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /fine-service/src/main/resources
+2026-09-17 14:30:00,634 [Worker-13: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /fine-service/src/main/resources
+2026-09-17 14:30:00,635 [Worker-13: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /fine-service/src/test/java
+2026-09-17 14:30:00,635 [Worker-13: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /fine-service/src/test/resources
+2026-09-17 14:30:01,016 [Worker-13: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 3 poms: local refresh takes 0.00 sec, refresh facades takes 1.00 sec, update config takes 0.00 sec 
+2026-09-17 14:30:01,471 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 14:30:01,475 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:30:01,478 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\src\test\resources
+2026-09-17 14:30:01,534 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 14:30:01,538 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:30:01,541 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\eureka-server\src\test\resources
+2026-09-17 14:30:01,769 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 14:30:01,794 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:30:01,796 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\fine-service\src\test\resources
+2026-09-17 14:30:32,858 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 14:30:32,863 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:30:32,867 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\api-gateway\src\test\resources
+2026-09-17 14:30:33,120 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 14:30:33,121 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:30:33,125 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\auth-service\src\test\resources
+2026-09-17 14:30:33,258 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 14:30:33,259 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:30:33,261 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\book-service\src\test\resources
+2026-09-17 14:30:33,384 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 14:30:33,385 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:30:33,389 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\src\test\resources
+2026-09-17 14:30:33,438 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 14:30:33,440 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:30:33,442 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\eureka-server\src\test\resources
+2026-09-17 14:30:33,533 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 14:30:33,535 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:30:33,538 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\fine-service\src\test\resources
+2026-09-17 14:33:40,448 [Worker-16: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:fine-service:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\fine-service\pom.xml.
+2026-09-17 14:33:41,150 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:33:41,151 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:33:41,153 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\fine-service\src\test\resources
+2026-09-17 14:33:42,359 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 14:33:42,363 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:33:42,368 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\fine-service\src\test\resources
+2026-09-17 14:35:05,716 [Worker-15: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:fine-service:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\fine-service\pom.xml.
+2026-09-17 14:35:06,378 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:35:06,379 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:35:06,383 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\fine-service\src\test\resources
+2026-09-17 14:35:07,734 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 14:35:07,735 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:35:07,739 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\fine-service\src\test\resources
+2026-09-17 14:35:22,302 [Worker-14: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:borrow-service:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\pom.xml.
+2026-09-17 14:35:22,885 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:35:22,885 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:35:22,888 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\src\test\resources
+2026-09-17 14:35:24,168 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 14:35:24,170 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:35:24,172 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\src\test\resources
+2026-09-17 14:35:41,605 [Worker-20: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2026-09-17 14:35:42,786 [Worker-20: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:borrow-service:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\pom.xml.
+2026-09-17 14:35:43,249 [Worker-20: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:auth-service:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\auth-service\pom.xml.
+2026-09-17 14:35:43,334 [Worker-20: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:borrow-service:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\book-service\pom.xml.
+2026-09-17 14:35:43,400 [Worker-20: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:eureka-server:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\eureka-server\pom.xml.
+2026-09-17 14:35:43,521 [Worker-20: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:fine-service:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\fine-service\pom.xml.
+2026-09-17 14:35:43,586 [Worker-20: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:api-gateway:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\api-gateway\pom.xml.
+2026-09-17 14:35:44,464 [Worker-20: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /borrow-service/src/main/java
+2026-09-17 14:35:44,465 [Worker-20: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /borrow-service/src/main/resources
+2026-09-17 14:35:44,466 [Worker-20: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /borrow-service/src/main/resources
+2026-09-17 14:35:44,466 [Worker-20: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /borrow-service/src/test/java
+2026-09-17 14:35:44,467 [Worker-20: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /borrow-service/src/test/resources
+2026-09-17 14:35:44,791 [Worker-20: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 2.00 sec, update config takes 0.00 sec 
+2026-09-17 14:35:45,351 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 14:35:45,371 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:35:45,375 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\src\test\resources
+2026-09-17 14:37:52,979 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 14:37:52,991 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:37:52,995 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\fine-service\src\test\resources
+2026-09-17 14:39:03,210 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 14:39:03,214 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:39:03,223 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\src\test\resources
+2026-09-17 14:40:02,789 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 14:40:02,796 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:40:02,800 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\src\test\resources
+2026-09-17 14:40:18,495 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 14:40:18,496 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:40:18,498 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\api-gateway\src\test\resources
+2026-09-17 14:40:18,662 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 14:40:18,665 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:40:18,668 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\auth-service\src\test\resources
+2026-09-17 14:40:18,823 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 14:40:18,824 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:40:18,827 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\book-service\src\test\resources
+2026-09-17 14:40:18,976 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 14:40:18,977 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:40:18,979 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\src\test\resources
+2026-09-17 14:40:19,028 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 14:40:19,029 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:40:19,031 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\eureka-server\src\test\resources
+2026-09-17 14:40:19,120 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 14:40:19,122 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:40:19,125 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\fine-service\src\test\resources
+2026-09-17 14:41:40,749 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 14:41:40,755 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:41:40,758 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\fine-service\src\test\resources
+2026-09-17 14:42:04,613 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 14:42:04,619 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:42:04,622 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\fine-service\src\test\resources
+2026-09-17 14:43:15,177 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 14:43:15,185 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:43:15,188 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\src\test\resources
+2026-09-17 14:43:42,418 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 14:43:42,426 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:43:42,428 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\src\test\resources
+2026-09-17 14:44:12,087 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 14:44:12,093 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:44:12,095 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\src\test\resources
+2026-09-17 14:44:56,761 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 14:44:56,768 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:44:56,772 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\src\test\resources
+2026-09-17 14:45:29,844 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 14:45:29,851 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:45:29,855 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\src\test\resources
+2026-09-17 14:46:03,361 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 14:46:03,366 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:46:03,368 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\src\test\resources
+2026-09-17 14:46:29,666 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 14:46:29,670 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:46:29,672 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\src\test\resources
+2026-09-17 14:47:22,594 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 14:47:22,602 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:47:22,605 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\book-service\src\test\resources
+2026-09-17 14:48:05,527 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 14:48:05,533 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:48:05,536 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\src\test\resources
+2026-09-17 14:49:00,241 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 14:49:00,248 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:49:00,250 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\fine-service\src\test\resources
+2026-09-17 14:51:00,942 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 14:51:00,944 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:51:00,946 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\api-gateway\src\test\resources
+2026-09-17 14:51:01,109 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 14:51:01,110 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:51:01,112 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\auth-service\src\test\resources
+2026-09-17 14:51:01,259 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 14:51:01,261 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:51:01,262 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\book-service\src\test\resources
+2026-09-17 14:51:01,402 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 14:51:01,403 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:51:01,406 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\src\test\resources
+2026-09-17 14:51:01,454 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 14:51:01,456 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:51:01,458 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\eureka-server\src\test\resources
+2026-09-17 14:51:01,535 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 14:51:01,536 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:51:01,537 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\fine-service\src\test\resources
+2026-09-17 14:53:14,280 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 14:53:14,289 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:53:14,292 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\book-service\src\test\resources
+2026-09-17 14:53:45,378 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 14:53:45,384 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:53:45,387 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\book-service\src\test\resources
+2026-09-17 14:55:08,998 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 14:55:09,004 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:55:09,006 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\src\test\resources
+2026-09-17 14:55:31,651 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 14:55:31,653 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:55:31,655 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\api-gateway\src\test\resources
+2026-09-17 14:55:31,762 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 14:55:31,763 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:55:31,765 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\auth-service\src\test\resources
+2026-09-17 14:55:31,898 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 14:55:31,899 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:55:31,903 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\book-service\src\test\resources
+2026-09-17 14:55:32,034 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 14:55:32,037 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:55:32,040 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\src\test\resources
+2026-09-17 14:55:32,090 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 14:55:32,092 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:55:32,093 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\eureka-server\src\test\resources
+2026-09-17 14:55:32,197 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 14:55:32,198 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 14:55:32,200 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\fine-service\src\test\resources
+2026-09-17 15:03:54,386 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 15:03:54,394 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 15:03:54,398 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\auth-service\src\test\resources
+2026-09-17 15:04:18,212 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 15:04:18,220 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 15:04:18,222 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\book-service\src\test\resources
+2026-09-17 15:04:31,610 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 15:04:31,622 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 15:04:31,625 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\src\test\resources
+2026-09-17 15:04:52,796 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 15:04:52,803 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 15:04:52,806 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\fine-service\src\test\resources
+2026-09-17 15:05:29,740 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 15:05:29,742 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 15:05:29,744 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\api-gateway\src\test\resources
+2026-09-17 15:05:29,853 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 15:05:29,854 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 15:05:29,856 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\auth-service\src\test\resources
+2026-09-17 15:05:29,955 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 15:05:29,956 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 15:05:29,958 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\book-service\src\test\resources
+2026-09-17 15:05:30,101 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 15:05:30,102 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 15:05:30,104 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\src\test\resources
+2026-09-17 15:05:30,150 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 15:05:30,151 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 15:05:30,153 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\eureka-server\src\test\resources
+2026-09-17 15:05:30,242 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 15:05:30,243 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 15:05:30,245 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\fine-service\src\test\resources
+2026-09-17 15:05:45,190 [Worker-15: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2026-09-17 15:05:47,434 [Worker-15: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:api-gateway:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\api-gateway\pom.xml.
+2026-09-17 15:05:47,945 [Worker-15: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:auth-service:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\auth-service\pom.xml.
+2026-09-17 15:05:48,212 [Worker-15: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:borrow-service:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\book-service\pom.xml.
+2026-09-17 15:05:48,341 [Worker-15: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:borrow-service:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\pom.xml.
+2026-09-17 15:05:48,449 [Worker-15: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:eureka-server:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\eureka-server\pom.xml.
+2026-09-17 15:05:48,636 [Worker-15: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:fine-service:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\fine-service\pom.xml.
+2026-09-17 15:05:50,168 [Worker-15: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /api-gateway/src/main/java
+2026-09-17 15:05:50,169 [Worker-15: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /api-gateway/src/main/resources
+2026-09-17 15:05:50,170 [Worker-15: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /api-gateway/src/main/resources
+2026-09-17 15:05:50,170 [Worker-15: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /api-gateway/src/test/java
+2026-09-17 15:05:50,170 [Worker-15: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /api-gateway/src/test/resources
+2026-09-17 15:05:50,414 [Worker-15: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /auth-service/src/main/java
+2026-09-17 15:05:50,415 [Worker-15: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /auth-service/src/main/resources
+2026-09-17 15:05:50,415 [Worker-15: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /auth-service/src/main/resources
+2026-09-17 15:05:50,416 [Worker-15: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /auth-service/src/test/java
+2026-09-17 15:05:50,416 [Worker-15: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /auth-service/src/test/resources
+2026-09-17 15:05:50,754 [Worker-15: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /book-service/src/main/java
+2026-09-17 15:05:50,754 [Worker-15: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /book-service/src/main/resources
+2026-09-17 15:05:50,755 [Worker-15: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /book-service/src/main/resources
+2026-09-17 15:05:50,755 [Worker-15: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /book-service/src/test/java
+2026-09-17 15:05:50,755 [Worker-15: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /book-service/src/test/resources
+2026-09-17 15:05:51,088 [Worker-15: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /borrow-service/src/main/java
+2026-09-17 15:05:51,089 [Worker-15: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /borrow-service/src/main/resources
+2026-09-17 15:05:51,089 [Worker-15: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /borrow-service/src/main/resources
+2026-09-17 15:05:51,090 [Worker-15: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /borrow-service/src/test/java
+2026-09-17 15:05:51,090 [Worker-15: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /borrow-service/src/test/resources
+2026-09-17 15:05:51,389 [Worker-15: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /eureka-server/src/main/java
+2026-09-17 15:05:51,390 [Worker-15: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /eureka-server/src/main/resources
+2026-09-17 15:05:51,390 [Worker-15: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /eureka-server/src/main/resources
+2026-09-17 15:05:51,390 [Worker-15: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /eureka-server/src/test/java
+2026-09-17 15:05:51,391 [Worker-15: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /eureka-server/src/test/resources
+2026-09-17 15:05:51,734 [Worker-15: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /fine-service/src/main/java
+2026-09-17 15:05:51,735 [Worker-15: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /fine-service/src/main/resources
+2026-09-17 15:05:51,736 [Worker-15: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /fine-service/src/main/resources
+2026-09-17 15:05:51,737 [Worker-15: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /fine-service/src/test/java
+2026-09-17 15:05:51,737 [Worker-15: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /fine-service/src/test/resources
+2026-09-17 15:05:52,902 [Worker-15: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 6 poms: local refresh takes 0.00 sec, refresh facades takes 4.00 sec, update config takes 2.00 sec 
+2026-09-17 15:05:53,134 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 15:05:53,160 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 15:05:53,168 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\api-gateway\src\test\resources
+2026-09-17 15:05:54,153 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 15:05:54,155 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 15:05:54,157 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\auth-service\src\test\resources
+2026-09-17 15:05:54,382 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 15:05:54,384 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 15:05:54,387 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\book-service\src\test\resources
+2026-09-17 15:05:54,679 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 15:05:54,681 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 15:05:54,683 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\src\test\resources
+2026-09-17 15:05:54,743 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 15:05:54,744 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 15:05:54,747 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\eureka-server\src\test\resources
+2026-09-17 15:05:55,040 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 15:05:55,043 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 15:05:55,045 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\fine-service\src\test\resources
+2026-09-17 15:12:18,830 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-17 15:12:18,849 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-17 15:12:18,852 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\src\test\resources
+2026-09-21 09:31:05,758 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2026-09-21 09:51:01,866 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-21 09:51:01,902 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-21 09:51:01,913 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\src\test\resources
+2026-09-21 09:51:21,742 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-21 09:51:21,750 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-21 09:51:21,755 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\src\test\resources
+2026-09-21 09:55:13,197 [Worker-12: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:borrow-service:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\pom.xml.
+2026-09-21 09:55:14,592 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-21 09:55:14,593 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-21 09:55:14,599 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\src\test\resources
+2026-09-21 09:55:30,218 [Worker-9: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2026-09-21 09:55:30,684 [Worker-9: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.archivalia:borrow-service:1.0.0 @ C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\pom.xml.
+2026-09-21 09:55:31,582 [Worker-9: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /borrow-service/src/main/java
+2026-09-21 09:55:31,587 [Worker-9: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /borrow-service/src/main/resources
+2026-09-21 09:55:31,588 [Worker-9: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /borrow-service/src/main/resources
+2026-09-21 09:55:31,590 [Worker-9: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /borrow-service/src/test/java
+2026-09-21 09:55:31,591 [Worker-9: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /borrow-service/src/test/resources
+2026-09-21 09:55:32,278 [Worker-9: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 1.00 sec, update config takes 0.00 sec 
+2026-09-21 09:55:32,811 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-21 09:55:32,837 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-21 09:55:32,842 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\src\test\resources
+2026-09-21 10:20:09,462 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-21 10:20:09,475 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-21 10:20:09,482 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\src\test\resources
+2026-09-21 10:39:07,671 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-21 10:39:07,683 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-21 10:39:07,689 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\src\test\resources
+2026-09-23 10:49:01,631 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2026-09-23 13:00:42,876 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2026-09-23 14:45:18,660 [Worker-0: Launching eureka-server - EurekaServerApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-23 14:45:18,709 [Worker-0: Launching eureka-server - EurekaServerApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-23 14:45:18,720 [Worker-0: Launching eureka-server - EurekaServerApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\eureka-server\src\test\resources
+2026-09-23 19:15:14,649 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2026-09-24 10:02:49,407 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2026-09-26 11:33:32,285 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2026-09-26 12:35:09,176 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2026-09-26 12:36:43,062 [Worker-12: Launching book-service - BookServiceApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-26 12:36:43,151 [Worker-12: Launching book-service - BookServiceApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-26 12:36:43,162 [Worker-12: Launching book-service - BookServiceApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\book-service\src\test\resources
+2026-09-26 12:36:46,341 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-26 12:36:46,346 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-26 12:36:46,351 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\api-gateway\src\test\resources
+2026-09-26 12:36:49,372 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-26 12:36:49,376 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-26 12:36:49,381 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\borrow-service\src\test\resources
+2026-09-26 12:36:51,823 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-09-26 12:36:51,826 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-09-26 12:36:51,830 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\fine-service\src\test\resources
+2026-10-01 14:30:34,051 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.

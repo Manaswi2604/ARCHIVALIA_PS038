@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Archivalia | Academic Digital Library</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div class="brand"><div class="logo">A</div><div><b>ARCHIVALIA</b><span>Digital Academic Library</span></div></div>
+  <nav><a href="#dashboard">Dashboard</a><a href="#books">Resources</a><a href="#loans">My Loans</a><button id="logout" class="ghost">Logout</button></nav>
+</header>
+<main>
+<section class="hero" id="dashboard">
+ <div><span class="eyebrow">PS038 • REVIEW 1 • SOA</span>
+ <h1>Knowledge, organized<br><em>for academic discovery.</em></h1>
+ <p>Search scholarly resources, borrow digital assets and track returns through a secure microservice platform.</p>
+ <div class="stats"><div><b id="bookCount">–</b><span>Resources</span></div><div><b id="loanCount">–</b><span>My Loans</span></div><div><b>₹5</b><span>Daily late fine</span></div></div>
+ </div>
+ <div class="arch-card"><div class="pulse"></div><b>MICROSERVICE STATUS</b><p>API Gateway</p><p>✓ Eureka Discovery</p><p>✓ JWT Security</p><p>✓ Book / Borrow / Fine</p></div>
+</section>
+<section id="books" class="panel">
+ <div class="section-head"><div><span class="eyebrow">CATALOG</span><h2>Academic resources</h2></div><input id="search" placeholder="Search title or author…"></div>
+ <div id="booksGrid" class="grid"></div>
+</section>
+<section id="loans" class="panel">
+ <div class="section-head"><div><span class="eyebrow">CIRCULATION</span><h2>My loans</h2></div></div>
+ <div id="loansList"></div>
+</section>
+<section class="panel architecture">
+ <span class="eyebrow">SERVICE ARCHITECTURE</span><h2>Review-1 implementation</h2>
+ <div class="diagram">
+  <div class="node">Browser</div><div class="arrow">→</div><div class="node main">API Gateway<br><small>:8080</small></div>
+  <div class="arrow">→</div><div class="services"><span>Auth :8084</span><span>Book :8081</span><span>Borrow :8082</span><span>Fine :8083</span><span>Eureka :8761</span></div>
+ </div>
+</section>
+</main>
+<div id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>

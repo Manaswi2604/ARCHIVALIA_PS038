@@ -1,0 +1,8 @@
+C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\auth-service\src\main\java\com\archivalia\auth\AuthServiceApplication.java
+C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\auth-service\src\main\java\com\archivalia\auth\config\DataInitializer.java
+C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\auth-service\src\main\java\com\archivalia\auth\config\SecurityConfig.java
+C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\auth-service\src\main\java\com\archivalia\auth\controller\AuthController.java
+C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\auth-service\src\main\java\com\archivalia\auth\model\AppUser.java
+C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\auth-service\src\main\java\com\archivalia\auth\model\ERole.java
+C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\auth-service\src\main\java\com\archivalia\auth\repo\UserRepository.java
+C:\SOA\ARCHIVALIA_PS038_REVIEW1_STS\ARCHIVALIA_PS038_REVIEW1_STS\auth-service\src\main\java\com\archivalia\auth\security\JwtService.java
